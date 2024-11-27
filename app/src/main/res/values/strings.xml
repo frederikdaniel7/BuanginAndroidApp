@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BuanginApp</string>
+    <string name="web_client_id">459669387822-akfk4jkdss0jaee9e370cfb20nh5mmqu.apps.googleusercontent.com</string>
+    <string name="waste_history_option">History</string>
+    <string name="add_waste">Add Waste</string>
+    <string name="home">Home</string>
+    <string name="filter_button_text">Date</string>
+</resources>

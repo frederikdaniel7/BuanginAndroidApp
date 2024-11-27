@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_waste_container"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_outline_list"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/card_trash_image"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:background="@drawable/corners_outline_card_image"
+            android:backgroundTint="@color/secondary_green"
+            android:padding="4dp"
+            android:src="@drawable/outline_recycle"
+            app:layout_constraintBottom_toBottomOf="@id/container_card_content"
+            app:layout_constraintStart_toStartOf="@id/container_card_content"
+            app:layout_constraintTop_toTopOf="@id/container_card_content"></ImageView>
+
+        <TextView
+            android:id="@+id/card_waste_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/poppins_medium"
+            android:lineHeight="18dp"
+            android:maxWidth="200dp"
+            android:text="PP Air mineral gelas bersih"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/waste_price_text_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/card_trash_image"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/card_weight_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Kg"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintStart_toStartOf="@+id/card_waste_type_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/card_waste_type_text_view"></TextView>
+
+
+        <TextView
+            android:id="@+id/card_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Agustus 2024"
+            android:textColor="@color/grey_texts"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_username_text_view"></TextView>
+
+        <TextView
+            android:id="@+id/card_username_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donald Trump"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/primary_green"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="@+id/card_weight_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/card_weight_text_view"></TextView>
+
+        <TextView
+            android:id="@+id/waste_price_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 150.0000"
+            android:textColor="@color/primary_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/card_trash_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/card_trash_image"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
